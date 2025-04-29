@@ -5,13 +5,19 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  let [counter, setCounter] = useState(10)
 //  let counter = 15
  const addvalue = () => {
   if(counter<20){
     console.log("value added", counter);
-    counter = counter+1; 
+    counter = counter+1;
     setCounter(counter)
+    
+    // setCounter(precounnter => precounnter+1 )
+    // setCounter(precounnter => precounnter+1 )
+    // setCounter(precounnter => precounnter+1 )
+    // setCounter(precounnter => precounnter+1 )
+    // the above used for more time increment
   }
   else{
     console.log("canot go above twenty:")
