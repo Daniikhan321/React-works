@@ -1,4 +1,4 @@
-
+import Danii from "./danii";
 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <h1>sardar daniikhan</h1>
+    <Danii/>
     </>
   )
 }
