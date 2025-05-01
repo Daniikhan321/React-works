@@ -7,25 +7,22 @@ function Signup() {
   const handleSignup = (e) => {
     e.preventDefault();
     console.log({ email, username, password });
-    // Your sign-up logic here
   };
 
   const handleGoogleSignup = () => {
-    // Google OAuth logic (e.g. Firebase, Auth0, etc.)
+   
     console.log('Sign up with Google');
   };
 
   const handleFacebookSignup = () => {
-    // Facebook OAuth logic here
     console.log('Sign up with Facebook');
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-lg">
+      <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-lg my-4">
         <h2 className="text-2xl font-bold text-center mb-6">Create Your Account</h2>
 
-        {/* Social Signups */}
         <div className="flex flex-col gap-4 mb-6">
           <button
             onClick={handleGoogleSignup}
@@ -48,7 +45,7 @@ function Signup() {
         {/* Manual Signup Form */}
         <form onSubmit={handleSignup} className="space-y-5">
           <div>
-            <label className="block mb-1 font-medium">Username</label>
+            <label className="flex mb-1 font-medium">Username</label>
             <input
               type="text"
               value={username}
@@ -58,7 +55,7 @@ function Signup() {
             />
           </div>
           <div>
-            <label className="block mb-1 font-medium">Email</label>
+            <label className="flex mb-1 font-medium">Email</label>
             <input
               type="email"
               value={email}
@@ -68,7 +65,7 @@ function Signup() {
             />
           </div>
           <div>
-            <label className="block mb-1 font-medium">Password</label>
+            <label className="flex mb-1 font-medium">Password</label>
             <input
               type="password"
               value={password}

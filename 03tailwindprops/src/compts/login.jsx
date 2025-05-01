@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // ✅ Use Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +35,7 @@ function Login() {
               required
             />
           </div>
-          <div className="flex items-center justify-between text-sm">
+          {/* <div className="flex items-center justify-between text-sm">
             <label className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -47,7 +46,7 @@ function Login() {
               Remember me
             </label>
             <a href="#" className="text-blue-500 hover:underline">Forgot password?</a>
-          </div>
+          </div> */}
           <button
             type="submit"
             className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
@@ -56,7 +55,6 @@ function Login() {
           </button>
         </form>
 
-        {/* ✅ Sign up link to Signup page */}
         <p className="text-center text-sm mt-4">
           Don’t have an account?{" "}
           <Link to="/signup" className="text-blue-500 hover:underline">Sign up</Link>
