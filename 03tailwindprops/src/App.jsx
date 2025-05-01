@@ -5,6 +5,8 @@ import Projects from './compts/projects';
 import Calendar from './compts/calendar';
 import Danii from './compts/danii';
 import Herosection from './compts/herosection';
+import Login from './compts/login';
+import Signup from './compts/signup';
 import Home from './compts/home'
 
 import './App.css';
@@ -35,6 +37,7 @@ let newarry =[1,2,3,4,];
                   <Link to="/team" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</Link>
                   <Link to="/projects" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</Link>
                   <Link to="/calendar" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar </Link>
+                  <Link to="/Login" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Login </Link>
                 </div>
               </div>
             </div>
@@ -49,20 +52,23 @@ let newarry =[1,2,3,4,];
           <Route path="/team" element={<Team />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+
         </Routes>
       </div>
     </Router>
-    <Herosection channel="daniikhan" button = "login" />
+    {/* <Herosection channel="daniikhan" button = "login" />
     <Herosection channel="sardar" button = "click me"/>
-    <Herosection channel="nawab" button ="" />
-    <Router>
+    <Herosection channel="nawab" button ="" /> */}
+    {/* <Router>
      <Link to="/" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white mx-4">daniikhan</Link>
      <Link to="/home" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Home</Link>
      <Routes>
      <Route path="/" element={<Danii />} />
      <Route path="/home" element={<Home />} />
      </Routes>
-    </Router>
+    </Router> */}
 
     </>
   
