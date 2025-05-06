@@ -45,7 +45,7 @@ function Signup() {
         {/* Manual Signup Form */}
         <form onSubmit={handleSignup} className="space-y-5">
           <div>
-            <label className="flex mb-1 font-medium">Username</label>
+            <label className="d-flex justify-content-start mb-1 font-medium">Username</label>
             <input
               type="text"
               value={username}
@@ -55,7 +55,7 @@ function Signup() {
             />
           </div>
           <div>
-            <label className="flex mb-1 font-medium">Email</label>
+            <label className="d-flex justify-content-start mb-1 font-medium">Email</label>
             <input
               type="email"
               value={email}
@@ -65,7 +65,7 @@ function Signup() {
             />
           </div>
           <div>
-            <label className="flex mb-1 font-medium">Password</label>
+            <label className="d-flex justify-content-start mb-1 font-medium">Password</label>
             <input
               type="password"
               value={password}
