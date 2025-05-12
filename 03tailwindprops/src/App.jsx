@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link, } from 'react-router-dom';
 import Dashboard from './compts/Dashboard';
-import Team from './compts/team';
+import Team from './compts/Team';
 import Projects from './compts/projects';
 import Calendar from './compts/calendar';
 import Danii from './compts/danii';
