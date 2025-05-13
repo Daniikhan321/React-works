@@ -10,7 +10,7 @@ const Topbar = () => (
           🔔
           <span className="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full text-xs px-1">3</span>
         </div>
-        <img src="/src/asssets/profile.svg" alt="Profile" className="w-8 h-8 rounded-full" />
+        <img src="/src/assets/profile.svg" alt="Profile" className="w-8 h-8 rounded-full" />
       </div>
     </div>
   );
