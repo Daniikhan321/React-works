@@ -1,16 +1,27 @@
+import { Link } from 'react-router-dom';
+
 const Sidebar = () => (
-    <div className="w-64 bg-blue-600 text-white flex flex-col justify-between p-4">
-      <div>
-        <div className="text-center font-bold text-2xl mb-8 flex justify-center"><img src="/src/assets/logo.svg" alt="" /></div>
-        <ul className="space-y-4">
-          <li className="font-semibold bg-white text-black px-4 py-2 rounded">Dashboard</li>
-          <li>My Appointments</li>
-          <li>Profile</li>
-        </ul>
+  <div className="w-64 bg-blue-600 text-white flex flex-col justify-between p-4 min-h-screen">
+    <div>
+      <div className="text-center font-bold text-2xl mb-8 flex justify-center">
+        <img src="/src/assets/logo.svg" alt="Logo" className="h-10" />
       </div>
-      <div className="text-sm">🔁 Logout</div>
+      <ul className="space-y-4">
+        <li>
+          <Link to="/" className="block px-4 py-2 hover:bg-blue-500 rounded">
+            Dashboard
+          </Link>
+        </li>
+        <li>
+          <Link to="/usermanagement" className="block px-4 py-2 hover:bg-blue-500 rounded">
+            User Management
+          </Link>
+        </li>
+        <li className="px-4 py-2">Profile</li>
+      </ul>
     </div>
-  );
-  
-  export default Sidebar;
-  
+    <div className="text-sm px-4 py-2 cursor-pointer hover:text-gray-300">🔁 Logout</div>
+  </div>
+);
+
+export default Sidebar;

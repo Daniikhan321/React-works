@@ -1,21 +1,33 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Sidebar from './components/sidebar';
 import Topbar from './components/Topbar';
 import DashboardStats from './components/DashboardStats';
 import AppointmentTable from './components/AppointmentTable';
+import UserManagement from './components/UserManagement';
+
+const Dashboard = () => (
+  <div className="p-6">
+    <DashboardStats />
+    <AppointmentTable />
+  </div>
+);
 
 const App = () => {
   return (
-    <div className="flex h-screen">
-      <Sidebar />
-      <div className="flex-1 bg-gray-100">
-        <Topbar />
-        <div className="p-6">
-          <DashboardStats />
-          <AppointmentTable />
+    <Router>
+      <div className="flex h-screen">
+        <Sidebar />
+        <div className="flex-1 bg-gray-100">
+          <Topbar />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/usermanagement" element={<UserManagement />} />
+          </Routes>
         </div>
       </div>
-    </div>
+    </Router>
   );
 };
 
