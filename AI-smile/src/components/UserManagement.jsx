@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 const usersData = [
-  { name: 'Jayshri Tiwari', email: 'tim.jennings@example.com', date: 'May 20, 2015', status: 'Inactive' },
-  { name: 'Shalini Jain', email: 'jackson.graham@example.com', date: 'March 13, 2014', status: 'Active' },
-  { name: 'Nandan Raikwar', email: 'georgia.young@example.com', date: 'May 6, 2012', status: 'Inactive' },
-  { name: 'Hillery Moses', email: 'debbie.baker@example.com', date: 'April 28, 2016', status: 'Active' },
-  { name: 'Amardeep Singh', email: 'felicia.reid@example.com', date: 'February 28, 2018', status: 'Active' },
-  { name: 'Navjot Kaur', email: 'sara.cruz@example.com', date: 'May 29, 2017', status: 'Active' },
-  { name: 'Lalit Thakur', email: 'bill.sanders@example.com', date: 'May 31, 2015', status: 'Active' },
-  { name: 'Vikas Tiwari', email: 'alma.lawson@example.com', date: 'October 25, 2019', status: 'Active' },
-  { name: 'M. S. Subramaniam', email: 'michael.mitc@example.com', date: 'May 12, 2019', status: 'Suspended' },
+  { img:'/src/assets/managment-1.svg', name: 'Jayshri Tiwari', email: 'tim.jennings@example.com', date: 'May 20, 2015', status: 'Inactive' },
+  { img:'/src/assets/managment-2.svg', name: 'Shalini Jain', email: 'jackson.graham@example.com', date: 'March 13, 2014', status: 'Active' },
+  { img:'/src/assets/managment-3.svg', name: 'Nandan Raikwar', email: 'georgia.young@example.com', date: 'May 6, 2012', status: 'Inactive' },
+  { img:'/src/assets/managment-4.svg', name: 'Hillery Moses', email: 'debbie.baker@example.com', date: 'April 28, 2016', status: 'Active' },
+  { img:'/src/assets/managment-5.svg', name: 'Amardeep Singh', email: 'felicia.reid@example.com', date: 'February 28, 2018', status: 'Active' },
+  { img:'/src/assets/managment-6.svg', name: 'Navjot Kaur', email: 'sara.cruz@example.com', date: 'May 29, 2017', status: 'Active' },
+  { img:'/src/assets/managment-7.svg', name: 'Lalit Thakur', email: 'bill.sanders@example.com', date: 'May 31, 2015', status: 'Active' },
+  { img:'/src/assets/managment-8.svg', name: 'Vikas Tiwari', email: 'alma.lawson@example.com', date: 'October 25, 2019', status: 'Active' },
+  { img:'/src/assets/managment-9.svg', name: 'M. S. Subramaniam', email: 'michael.mitc@example.com', date: 'May 12, 2019', status: 'Suspended' },
 ];
 
 const pageSize = 5;
@@ -34,12 +34,13 @@ const UserManagement = () => {
   };
 
   return (
-    <div className="p-6">
-      <input
-        type="text"
-        placeholder="Search"
-        className="border border-gray-300 p-2 rounded mb-4 w-1/3"
-      />
+    <div>
+      <div>
+        <p>Users</p>
+        <span>Dashboard • Users</span>
+      </div>
+      <div className="p-6">
+    
       <div className="bg-white shadow-md rounded-lg overflow-hidden">
         <table className="min-w-full text-sm text-left">
           <thead className="bg-gray-100 font-semibold">
@@ -54,7 +55,7 @@ const UserManagement = () => {
           <tbody>
             {paginatedUsers.map((user, index) => (
               <tr key={index} className="border-b hover:bg-gray-50">
-                <td className="py-2 px-4">{user.name}</td>
+                <td className="py-2 px-4 flex gap-2"> <img src={user.img}/>  {user.name}</td>
                 <td className="py-2 px-4">{user.email}</td>
                 <td className="py-2 px-4">{user.date}</td>
                 <td className="py-2 px-4">
@@ -106,6 +107,7 @@ const UserManagement = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

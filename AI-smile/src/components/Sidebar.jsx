@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => (
-  <div className="w-64 bg-blue-600 text-white flex flex-col justify-between p-4 min-h-screen">
+  <div className="w-50 bg-blue-600 text-white flex flex-col justify-between p-4 min-h-screen">
     <div>
       <div className="text-center font-bold text-2xl mb-8 flex justify-center">
         <img src="/src/assets/logo.svg" alt="Logo" className="h-10" />
