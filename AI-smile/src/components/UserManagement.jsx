@@ -35,9 +35,9 @@ const UserManagement = () => {
 
   return (
     <div>
-      <div>
-        <p>Users</p>
-        <span>Dashboard • Users</span>
+      <div className='ps-10 pt-10'>
+        <p style={{fontSize:"20px",fontWeight:"700",color:"#333333"}}>Users</p>
+        <span style={{fontSize:"14px",fontWeight:"600",color:"#333333"}}>Dashboard • Users</span>
       </div>
       <div className="p-6">
     
