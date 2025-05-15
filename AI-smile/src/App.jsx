@@ -2,10 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Sidebar from './components/sidebar';
-import Topbar from './components/Topbar';
+import Topbar from './components/topbar';
 import DashboardStats from './components/DashboardStats';
 import AppointmentTable from './components/AppointmentTable';
 import UserManagement from './components/UserManagement';
+import SmileAnalysisRecord from './components/SmileAnalysisRecord';
+import DentalManagement from './components/DentalManagement';
+import Setting from './components/setting';
+
 
 const Dashboard = () => (
   <div className="p-6">
@@ -24,7 +28,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/usermanagement" element={<UserManagement />} />
-          </Routes>
+            <Route path="/smileanalysisrecord" element={<SmileAnalysisRecord/>}/>
+            <Route path="/dentalmanagement" element={<DentalManagement/>}/>
+            <Route path="/setting" element={<Setting/>}/>
+            </Routes>
         </div>
       </div>
     </Router>
