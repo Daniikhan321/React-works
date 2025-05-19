@@ -20,9 +20,9 @@ const Home = () => {
 
       {/* Text */}
       <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 text-center">
-        <h1 className="text-4xl font-bold text-black">
-          UPLOAD YOUR TEETH PHOTO — Our AI Finds
-        </h1>
+        <h4 className="text-3xl font-semibold text-black  text-center" style={{width:"100%"}}>
+          Upload Your <span className='teeth-photo'>Teeth Photo</span> — Our AI Finds
+        </h4>
         <h2 className="text-3xl font-semibold text-black mt-2">
           The Best Provider For You. Fast, Accurate, Free
         </h2>

@@ -1,1 +1,8 @@
 @import "tailwindcss";
+.teeth-photo{
+        background-color: #229eda;
+    border-bottom-left-radius: 12px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
