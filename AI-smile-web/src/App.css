@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.light-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.light-button:hover {
+  background-color: #1c86ee;
+}
+
+.dark-text {
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dark-text:hover {
+  color: #1c86ee;
+}
