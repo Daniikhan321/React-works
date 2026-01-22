@@ -2,12 +2,14 @@ import { useContext, useState } from "react"
 import UserContext from "../Context/UserContext"
 export default function Login() {
 
-    const { username, setUsername } = useState('');  
-    const  {password, setPassword}  = useState(''); 
+    const [ username, setUsername ] = useState('');  
+    const  [password, setPassword]  = useState(''); 
     const {setUser} = useContext(UserContext);
     
-    const handleLogin = () => {
+    const handleLogin = (e) => {
 
+      e.preventDefault()
+      setUser({username, password});
     
     }
   return (
@@ -18,8 +20,11 @@ export default function Login() {
         </h2>
         <input type="text" 
         value={username}
+        
         onChange={(e) => setUsername(e.target.value)}
         placeholder="username" />
+        {"     "}
+
         <input type="password" 
         value={password}
         onChange={(e) => setPassword(e.target.value)}
@@ -30,4 +35,3 @@ export default function Login() {
     
   ) 
 }
-export default Login
